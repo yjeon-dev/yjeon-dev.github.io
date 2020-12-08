@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title>Document</title>
+</head>
+<header>
+  <div id="header">
+    <div class="header1">
+      <a href="../index.html"><img src="../images/logo.png" alt="logo.png" id="mainlogo">
+      </a>
+    </div>
+
+    <div class="header1">
+      <div>
+        <strong>What's Popular</strong>
+        <a href="" class="search_a">Samsung75" 4K</a> &nbsp;
+        <a href="" class="search_a">Airpods pro</a> &nbsp;
+        <a href="" class="search_a">Microsoft Surface Pro</a>
+        &nbsp;
+      </div>
+      <br>
+
+      <input type="text" value="" name="search" size="40" id="header_search_text">
+      <input type="submit" value="search">
+    </div>
+
+    <div>
+      <a href="" class="header_a2"> Sign In&nbsp;&nbsp; </a>
+      <a href="" class="header_a2">Create an account&nbsp;&nbsp;</a>
+      <a href="" class="header_a2">Checkout&nbsp;&nbsp;</a>
+      <a href="" class="header_a2">Orders&nbsp;&nbsp;</a>
+      <a href="" class="header_a2">Customer Service</a>
+    </div>
+
+    <ul id="topMenu">
+      <li><button type="type" id="allCategory"><a href="../index.html">Shop All Products</a></button></li>
+      <li><button type="type" id="newProd"> <a href="../index.html">New Arrivals</a> </button></li>
+      <li><button type="type" id="best10"><a href="../index.html">Most Popular 10</a></button></li>
+      <li><button type="type" id="brand"><a href="../index.html">Brands</a></button></li>
+      <li><button type="type" id="review"><a href="../index.html">Review</a></button></li>
+    </ul>
+  </div>
+</header>
+
+<body>
+  <main>
+    <div class="register_path">
+      <a href="index.html">home</a>>
+      <strong>Contact</strong>
+    </div>
+    <br><br>
+    <h3 id=contact_text>Contact Us</h3>
+    <div class="container" id="container">
+
+
+      <!-- //-------------------------------------------------- -->
+      <form action="https://httpbin.org/post" method="post">
+
+        <div class="row">
+          <div class="col form-group">
+            <label for="fname"><span class="text-danger">*</span> First Name</label>
+            <input id="fname" class="form-control" name="fname" autocomplete="given-name" type="text" autofocus
+              tabindex="1" required>
+          </div>
+          <div class="col form-group">
+            <label for="lname"><span class="text-danger">*</span> Last Name</label>
+            <input id="lname" class="form-control" name="lname" autocomplete="family-name" type="text" tabindex="2"
+              required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="email"><span class="text-danger">*</span> Email Address</label>
+            <input id="email" class="form-control" name="email" autocomplete="email" type="email" tabindex="3" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col form-group">
+            <label for="address"><span class="text-danger">*</span> Street Address</label>
+            <input id="address" class="form-control" name="address" autocomplete="street-address" type="text"
+              tabindex="5" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col form-group">
+            <label for="city"><span class="text-danger">*</span> City</label>
+            <input id="city" class="form-control" name="city" autocomplete="address-level2" type="text" tabindex="6"
+              required>
+          </div>
+
+          <div class="col form-group">
+            <label for="province"><span class="text-danger">*</span> Province</label>
+            <select id="province" class="form-control" name="province" autocomplete="address-level1" type="text"
+              tabindex="7" required>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland and Labrador</option>
+              <option>Northwest Territories</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option selected>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Quebec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+          </div>
+
+          <div class="col form-group">
+            <label for="postal-code"><span class="text-danger">*</span> Postal Code</label>
+            <input id="postal-code" class="form-control" name="postal-code" autocomplete="postal-code" type="text"
+              tabindex="8" placeholder="M2J 2X5" pattern="^[A-Za-z]\d[A-Za-z][ -]\d[A-Za-z]\d$" required>
+
+
+            <div class="invalid-feedback">
+              Enter a valid Canadian Postal Code
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col form-group">
+            <label class="mr-2"><span class="text-danger">*</span> Option</label>
+            <div class="form-check form-check-inline">
+              <input id="quest-option" class="form-check-input" type="radio" name="quest" value="question" checked>
+              <label class="form-check-label" for="quest-option">Question</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input id="quest-comment" class="form-check-input" type="radio" name="quest" value="comment">
+              <label class="form-check-label" for="quest-comment">Comment</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input id="quest-orderproblem" class="form-check-input" type="radio" name="quest" value="orderproblem">
+              <label class="form-check-label" for="quest-orderproblem">Order Problem</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="desc">Description</label>
+            <textarea id="desc" class="form-control" name="description" row="8" tabindex="9"></textarea>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row-reverse mt-2">
+          <input class="btn btn-primary" type="submit" name="submit" value="Submit" tabindex="10">
+          <input class="btn btn-secondary mr-3" type="reset" name="reset" value="Reset" tabindex="11">
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="footer">
+      <div class="footdiv">
+        <div class="footText"> Customer Support</div>
+        <div class="footPhone"> 416-491-5050 </div>
+        <div>
+          <div class="footTimeImgDiv">
+            <img src="../images/logo.png" alt="footTimelogo.jpg" id="footTimelogo">
+          </div>
+          <div class="footPdiv">
+            <p class="footPtag"><strong>Monday-Friday</strong> 8am to 5pm(ET)</p>
+            <p class="footPtag"><strong>Saturday - Sunday</strong> 9 AM to 6 PM(ET)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footdiv">
+        <div class="footText"> About us</div>
+        <div class="footPhone"><a href="../index.html"> Careers </a></div>
+        <div>
+          <div class="footTimeImgDiv">
+            <img src="../images/logo.png" alt="footTimelogo.jpg" id="footTimelogo">
+          </div>
+          <div class="footPdiv">
+            <p class="footPtag"><strong>Retail stores</strong></p>
+            <p class="footPtag"><strong>Head office</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footdiv">
+        <div class="footText"> Contact Us</div>
+        <div class="footPhone"><a href="contact.html"> 1:1 Contact > </a></div>
+        <div>
+          <div class="footTimeImgDiv">
+            <img src="../images/logo.png" alt="footTimelogo.jpg" id="footTimelogo">
+          </div>
+          <div class="footPdiv">
+            <p class="footPtag">1 : 1 contact</p>
+            <p class="footPtag">contact us </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div id="footUldiv">
+        <ul id="footUl">
+          <li class="footli"><a href="" class="footmenu">Terms & Conditions</a></li>
+          <li class="footli"><a href="" class="footmenu">Conditions of Use</a></li>
+          <li class="footli"><a href="" class="footmenu">Privacy
+              Policy</a>
+          </li>
+          <li class="footli"><a href="" class="footmenu">Online
+              Policy</a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="products-data.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
