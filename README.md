@@ -1,16 +1,16 @@
 # yjeon-dev.github.io
 
 
-This page is my WEB222 Final Project Web page.
+• Created Shopping Mall Website using HTML, CSS, JavaScript
 
 
-I made a website (CLOUT SHOP) that sells electronic devices.
+• Website included different header sections such as "New Arrivals", " Most Popular 10", " Brand"
 
 
-And you can use "contact page", "email subscribe" function. 
+• 1:1 contact function and Email subscribes function were also built into the website
 
 
-This website was created with "Responsive web design".
+• Created Responsive web design using media queries
 
 
 https://yjeon-dev.github.io/src/index.html
